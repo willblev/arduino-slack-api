@@ -16,7 +16,7 @@ MIT License
 #define SLACK_ENABLE_SERIAL
 
 //un-mark following line to enable debug mode
-#define SLACK_ENABLE_DEBUG
+//#define SLACK_ENABLE_DEBUG
 
 #ifdef SLACK_ENABLE_SERIAL
 #define SLACK_SERIAL(STR) Serial.print(STR)
@@ -66,7 +66,7 @@ public:
   SlackProfile getCurrentStatus();
   bool setPresence(const char *presence);
   int portNumber = 443;
-  int profileBufferSize = 3000;
+  int profileBufferSize = 4000;
   Client *client;
 
 private:

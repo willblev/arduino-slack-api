@@ -210,8 +210,8 @@ SlackProfile ArduinoSlack::getCurrentStatus()
             SLACK_DEBUG_SERIAL_LN(error.c_str());
         }
     }
-    closeClient();
     return profile;
+    closeClient();
 }
 
 void ArduinoSlack::skipHeaders(bool tossUnexpectedForJSON)
